@@ -1,3 +1,5 @@
+# terraform-aws-secrets-access-policy-document
+
 [//]: # (BEGIN_TF_DOCS)
 Generates an IAM policy document with permissons to access a list of secrets
 from AWS Secrets Manager.
@@ -62,3 +64,13 @@ No modules.
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 
 [//]: # (END_TF_DOCS)
+
+
+## Authors
+
+**Andre Silva** [@andreswebs](https://github.com/andreswebs)
+
+
+## License
+
+This project is licensed under the [Unlicense](UNLICENSE.md).
