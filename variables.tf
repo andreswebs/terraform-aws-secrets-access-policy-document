@@ -5,5 +5,6 @@ variable "secret_names" {
 
 variable "additional_actions" {
   type        = list(string)
-  description = "List of additional policy actions for the allowed secrets"
+  description = "List of additional policy actions for the allowed secrets. Default is empty"
+  default     = []
 }
