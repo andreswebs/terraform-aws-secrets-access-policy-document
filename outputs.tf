@@ -12,3 +12,8 @@ output "secret_names" {
   value = var.secret_names
   description = "List of friendly names of the allowed secrets"
 }
+
+output "additional_actions" {
+  value = var.additional_actions
+  description = "List of additional policy actions for the allowed secrets"
+}
