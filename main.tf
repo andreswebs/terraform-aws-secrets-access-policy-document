@@ -20,7 +20,7 @@ resource "random_id" "this" {
 
 data "aws_iam_policy_document" "this" {
   statement {
-    sid       = random_id.this.id
+    sid       = random_id.this.hex
     actions   = local.secret_actions
     resources = local.secret_arns
   }
