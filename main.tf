@@ -14,13 +14,16 @@ locals {
   secret_actions = concat(local.default_actions, var.additional_actions)
 }
 
-resource "random_id" "this" {
-  byte_length = 8
-}
-
 data "aws_iam_policy_document" "this" {
+
   statement {
-    sid       = random_id.this.hex
+    sid = "List"
+    actions = ["secretsmanager:ListSecrets"]
+    resources = ["*"]
+  }
+
+  statement {
+    sid       = "Access"
     actions   = local.secret_actions
     resources = local.secret_arns
   }
