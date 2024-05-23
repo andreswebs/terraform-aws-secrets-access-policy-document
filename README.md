@@ -30,6 +30,7 @@ module "secrets_access" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_additional_actions"></a> [additional\_actions](#input\_additional\_actions) | List of additional policy actions for the allowed secrets. Default is empty | `list(string)` | `[]` | no |
+| <a name="input_secret_name_prefixes"></a> [secret\_name\_prefixes](#input\_secret\_name\_prefixes) | List of prefixes of allowed secrets | `list(string)` | `[]` | no |
 | <a name="input_secret_names"></a> [secret\_names](#input\_secret\_names) | List of friendly names of the allowed secrets | `list(string)` | n/a | yes |
 
 ## Modules
