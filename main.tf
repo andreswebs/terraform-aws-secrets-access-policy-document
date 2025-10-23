@@ -4,7 +4,7 @@ data "aws_partition" "current" {}
 
 locals {
   partition  = data.aws_partition.current.partition
-  region     = data.aws_region.current.name
+  region     = data.aws_region.current.region
   account_id = data.aws_caller_identity.current.account_id
 }
 
