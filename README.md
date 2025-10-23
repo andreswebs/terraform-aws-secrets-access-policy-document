@@ -71,12 +71,10 @@ No modules.
 
 [//]: # (END_TF_DOCS)
 
-
 ## Authors
 
 **Andre Silva** [@andreswebs](https://github.com/andreswebs)
 
-
 ## License
 
-This project is licensed under the [Unlicense](UNLICENSE.md).
+This project is licensed under the [Unlicense](UNLICENSE).
